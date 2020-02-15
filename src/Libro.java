@@ -1,9 +1,11 @@
 public class Libro {
+    //Atributos del libro
     private String titulo;
     private String autor;
     private String isbn;
     private int numPaginas;
 
+    //Constructor de la clase Libro
     public Libro(String titulo, String autor, String isbn, int numPaginas) {
         this.titulo = titulo;
         this.autor = autor;
@@ -11,6 +13,7 @@ public class Libro {
         this.numPaginas = numPaginas;
     }
 
+    //Método para mostrar los datos del libro.
     @Override
     public String toString(){
         return "El libro "+titulo+" con ISBN "+isbn+" creado por el autor "+autor+" tiene "+numPaginas+" páginas";
